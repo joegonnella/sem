@@ -13,7 +13,7 @@ jobs:
         with:
           java-version: '11'
           distribution: 'adopt'
-      - name: Complile with Maven
+      - name: Compile with Maven
         run: mvn compile
       - name: Build Docker Image
         run: docker build -t semimage .
